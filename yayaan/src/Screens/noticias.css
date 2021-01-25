@@ -1,0 +1,173 @@
+body {
+    background: #ebdae8;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .appnoti {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+  
+  }
+  form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1em;
+  }
+  button {
+    background: rgb(85, 148, 230);
+    color: #fff;
+    font: inherit;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    padding: 0.5em 1.5em;
+  }
+  button:active {
+    background-color: #05b;
+  }
+  input {
+    border: 1px solid #999;
+    border-radius: 3px;
+    font: inherit;
+    padding: 0.5em;
+    outline: none;
+  }
+  input:focus {
+    outline: auto #17f;
+  }
+  .item {
+    padding: 1em;
+    list-style-type: none;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    background: #fff;
+    box-shadow: 0px 2px 6px 2px #0002;
+  }
+  .item .title {
+    font-size: 100%;
+  }
+  .item .description {
+    margin: 1em 0;
+  }
+  .item .thumbnail {
+    float: right;
+    box-shadow: 0px 1px 1px 1px #0002;
+    border-radius: 12px;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+  .item .meta {
+    font-size: 80%;
+    font-weight: bold;
+    color: #555;
+  }
+  .item .provider-thumbnail {
+    margin-right: 0.5em;
+  }
+  .item .meta > *:not(:last-child) {
+    margin-right: 2em;
+  }
+
+  .container {
+    position: relative;
+    left: 1290px;
+    top: 150px;
+    right: 300px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+ 
+  .circle {
+    left: 420px;
+    width: 500px;
+    height: 500px;
+    background: rgb(253, 174, 238);
+    position: relative;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/YAYAAN.png');
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+   
+    span {
+      position: absolute;
+      text-align: center;
+    }
+  }
+  
+  .pulse-ring {
+    width: 400px;
+    height: 400px;
+    border: 3px solid rgb(208, 99, 198);
+    border-radius: 50%;
+    position: absolute;
+    animation: pulsate infinite ease-in-out 2s;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .red-medium-circle {
+      position: absolute;
+      width: 430px;
+      height: 430px;
+      border-radius: 100%;
+      background: transparent;
+      box-shadow: 2px 2px 4px rgba(23, 86, 181, 0.5),         inset 2px 2px 4px rgba(47, 134, 201, 0.5);
+        border: 2px solid rgb(237, 96, 225);
+      animation: pulsate infinite ease-in-out 2s 0.3s;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .red-big-circle {
+      position: absolute;
+      width: 460px;
+      height: 460px;
+      border-radius: 100%;
+      background: transparent;
+      box-shadow: 2px 2px 4px rgba(49, 143, 194, 0.5), inset 2px 2px 4px rgba(91, 121, 197, 0.5);
+      border: 2px solid rgb(238, 96, 238);
+      animation: pulsate infinite ease-in-out 2s 0.6s;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .red-huge-circle {
+      position: absolute;
+      width: 490px;
+      height: 490px;
+      border-radius: 100%;
+      background: transparent;
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.5), inset 2px 2px 4px rgba(0,0,0,.5);
+      border: 2px solid rgb(242, 85, 210);
+      animation: pulsate infinite ease-in-out 2s 0.9s;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes pulsate {
+    0% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+    
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.3, 1.3);
+      opacity: 0;
+    }
+  }

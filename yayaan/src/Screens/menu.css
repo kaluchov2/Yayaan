@@ -1,0 +1,96 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+        ". h h h h h h h h h h ."
+        "m c c c c c c c c c c c"
+        ". f f f f f f f f f f .";
+}
+
+.header {
+    grid-area: h;
+}
+
+.menu {
+    grid-area: m;
+}
+
+.content {
+    grid-area: c;
+}
+
+.footer {
+    grid-area: f;
+}
+
+
+/* 
+.flexbox-header {
+    display: flex;
+}
+
+.flexbox-header > div:nth-child(3) {
+    margin-left: auto;
+}
+
+.grid-page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px 200px 40px;
+}
+
+.header {
+    grid-column: 1 / -1;
+    display: flex;
+}
+
+.header > div:nth-child(3) {
+    margin-left: auto;
+}
+
+.menu {
+    grid-column: 1 / 2;
+}
+
+.content {
+    grid-column: 2 / -1;
+}
+
+.footer {
+    grid-column: 1 / -1;
+}
+ */
+
+
+ /* <p>GRID PAGE</p>
+ <div class="grid-page">
+     <div class="header">
+         <div>HOME</div>
+         <div>SEARCH</div>
+         <div>LOGOUT</div>
+     </div>
+     <div class="menu">MENU</div>
+     <div class="content">CONTENT</div>
+     <div class="footer">FOOTER</div>
+ </div>
+</body> */
+
+
+
+/* <html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="basic.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">HEADER</div>
+            <div class="menu">MENU</div>
+            <div class="content">CONTENT</div>
+            <div class="footer">FOOTER</div>
+        </div>
+    </body>
+</html> */
